@@ -1,0 +1,20 @@
+ALGORITHM algorithm_name
+VAR
+ph:string;
+nbrmot:entier;
+espace:entier;
+nbrvoy:entier;
+BEGIN
+ nbrmot=0;
+ espace=0;
+nbrvoy=0;
+Ecrire ("Entrez une phrase :", ph);
+ pour i:=1 a length(ph) faire
+ if ph[i]=="";
+ nbrmot:=nbrmot+1;
+ if ph[i] in ['a','e','u','i'];
+ nbrvoy=nbrvoy+1;
+write ("le nombre de mot et:", nbrmot);
+write ("le nombre de voyelles et:",nbrvoy);
+write("longueur de phrase", ph.length)
+END
